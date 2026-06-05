@@ -1,10 +1,12 @@
 import math
 def square(side):
     return {"area": side**2, "perimeter": side*4,}
+
     side = num_check("side length: ")
+
     print(f"Circle area: {square(side)['area']}")
     print(f"Circle circumference: {square(side)['perimeter']}")
-    
+
 def num_check(question, num_type="float"):
 
     if num_type == "float":

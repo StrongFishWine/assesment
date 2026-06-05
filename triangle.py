@@ -23,3 +23,13 @@ def num_check(question, num_type="float"):
 
         except ValueError:
             print(error)
+
+def tri_perimeter(side1, side2, side3):
+    return {"perimeter": side1+side2+side3}
+
+    side1 = num_check("First side length: ")
+    side2 = num_check("Second side length: ")
+    side3 = num_check("Third side length: ")
+
+    print(f"Triangle perimeter: {square(side)['perimeter']}")
+

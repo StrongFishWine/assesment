@@ -28,4 +28,4 @@ def num_check(question, num_type="float"):
 
 radius = num_check("Radius: ")
 print(f"Circle area: {circle(radius)['area']}")
-print(f"Circle perimeter: {circle(radius)['perimeter']}")
+print(f"Circle circumference: {circle(radius)['perimeter']}")
