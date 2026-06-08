@@ -1,6 +1,12 @@
 import math
-def circle(radius):
-    return {"area": math.pi*radius**2, "perimeter": 2*math.pi*radius,}
+def circle():
+    radius = num_check("Radius length: ")
+
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+
+    print(f"Circle area: {area:.2f}")
+    print(f"Circle circumference: {perimeter:.2f}")
 
 def num_check(question, num_type="float"):
 
@@ -26,6 +32,4 @@ def num_check(question, num_type="float"):
         except ValueError:
             print(error)
 
-radius = num_check("Radius: ")
-print(f"Circle area: {circle(radius)['area']}")
-print(f"Circle circumference: {circle(radius)['perimeter']}")
+circle()

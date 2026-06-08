@@ -57,7 +57,7 @@ def num_check(question, num_type="float"):
         except ValueError:
             print(error)
 
-def tri_perimeter(side1, side2, side3):
+def tri_perimeter():
 
     side1 = num_check("First side length: ")
     side2 = num_check("Second side length: ")
@@ -81,7 +81,10 @@ if want_instructions == "no":
 shape = input("What shape?: ")
 if shape == "circle" or "c" or "round one":
     circle()
-elif shape == "triangle" or "t"
-    
+elif shape == "triangle" or "t":
+    tri_perimeter()
+
+
+
 
 

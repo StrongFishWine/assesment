@@ -24,12 +24,26 @@ def num_check(question, num_type="float"):
         except ValueError:
             print(error)
 
-def tri_perimeter(side1, side2, side3):
-    return {"perimeter": side1+side2+side3}
+def tri_areaBH():
+    base = num_check("Base length: ")
+    height = num_check("Triangle Height: ")
+
+    area = base*height
+
+    print(f"Triangle area: {area:.2f}")
+
+def tri_perimeter():
 
     side1 = num_check("First side length: ")
     side2 = num_check("Second side length: ")
     side3 = num_check("Third side length: ")
 
-    print(f"Triangle perimeter: {square(side)['perimeter']}")
+    perimeter = side1+side2+side3
+    print(f"Triangle perimeter: {perimeter}")
 
+def triangle():
+    trioutput = input("Do you need the area or perimeter for your triangle?: ")
+    if trioutput == "area" or "a":
+        tri_areaBH()
+    elif trioutput == "perimeter" or "p":
+        tri_perimeter()
