@@ -1,12 +1,13 @@
 import math
-def square():
-    side = num_check("side length: ")
+def rectangle():
+    length = num_check("Length: ")
+    width = num_check("Width: ")
 
-    area = side**2
-    perimeter = side*4
+    area = width*length
+    perimeter = 2*(width+length)
 
-    print(f"Square area: {area:.2f}")
-    print(f"Square perimeter: {perimeter:.2f}")
+    print(f"Rectangle area: {area:.2f}")
+    print(f"Rectangle perimeter: {perimeter:.2f}")
 
 def num_check(question, num_type="float"):
 
@@ -33,4 +34,3 @@ def num_check(question, num_type="float"):
             print(error)
 
 
-square()
