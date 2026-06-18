@@ -1,0 +1,163 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36">
+  <diagram name="kanban" id="mA1MNPEqkhyJ04z9z8qO">
+    <mxGraphModel dx="1971" dy="826" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XuFvQbQuQudh8McrRcfC-1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=none;fontFamily=Helvetica;fontSize=13;points=[];verticalAlign=top;stackBorder=0;resizable=1;strokeWidth=2;sketch=1;disableMultiStroke=1;" value="COMPONENTS" vertex="1">
+          <mxGeometry height="599" width="200" x="-160" y="50" as="geometry" />
+        </mxCell>
+        <object label="" status="New" id="XuFvQbQuQudh8McrRcfC-2">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;strokeColor=none;fillStyle=solid;fillColor=#FFCC99;fontSize=16;" vertex="1">
+            <mxGeometry height="571" width="200" y="28" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="&amp;nbsp;Instructions" placeholders="1" id="XuFvQbQuQudh8McrRcfC-3">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;spacing=5;fillColor=#9AC7BF;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="41" width="160" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shape detail" placeholders="1" id="XuFvQbQuQudh8McrRcfC-5">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;verticalAlign=middle;spacing=5;fillColor=#D4E1F5;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="49" width="160" x="20" y="82" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="if triangle" placeholders="1" id="wu0KhKsaDaOcBsqJE72C-1">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;verticalAlign=middle;spacing=5;fillColor=#D4E1F5;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="49" width="160" x="20" y="151" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shape detail" placeholders="1" id="wu0KhKsaDaOcBsqJE72C-2">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;verticalAlign=middle;spacing=5;fillColor=#D4E1F5;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="49" width="160" x="20" y="220" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shape detail" placeholders="1" id="wu0KhKsaDaOcBsqJE72C-3">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;verticalAlign=middle;spacing=5;fillColor=#D4E1F5;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="49" width="160" x="20" y="289" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Output costs, profit calculations and selling price to user and print to file." placeholders="1" id="XuFvQbQuQudh8McrRcfC-11">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-2" style="whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;align=left;verticalAlign=middle;spacing=5;fillColor=#F8CECC;strokeColor=#666666;fontColor=#333333;" vertex="1">
+            <mxGeometry height="80" width="160" x="20" y="358" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Instructions" status="In progress" id="XuFvQbQuQudh8McrRcfC-12">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;strokeColor=none;fillStyle=solid;fillColor=#9AC7BF;fontSize=16;swimlaneFillColor=#9AC7BF;" vertex="1">
+            <mxGeometry height="147" width="330" x="110" y="73" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Yes / no checker" placeholders="1" id="XuFvQbQuQudh8McrRcfC-13">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-12" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="39" width="290" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Display instructions (with statement generator)" placeholders="1" id="XuFvQbQuQudh8McrRcfC-15">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-12" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="44" width="290" x="20" y="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shape Details" status="Completed" id="XuFvQbQuQudh8McrRcfC-16">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;strokeColor=none;fillStyle=solid;fillColor=#A9C4EB;fontSize=16;swimlaneFillColor=#A9C4EB;" vertex="1">
+            <mxGeometry height="199" width="330" x="110" y="260" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ask for shape" placeholders="1" id="XuFvQbQuQudh8McrRcfC-17">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-16" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="40" width="290" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="accept square, triangle, circle, rectangle" placeholders="1" id="XuFvQbQuQudh8McrRcfC-18">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-16" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="39" width="290" x="20" y="81" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shape checker" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-6">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-16" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="39" width="290" x="20" y="140" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Nice to have..." status="Completed" id="XuFvQbQuQudh8McrRcfC-24">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;sketch=1;strokeColor=none;fillStyle=solid;fillColor=#fff2cc;fontSize=16;swimlaneFillColor=#E6E6E6;" vertex="1">
+            <mxGeometry height="180" width="255" x="800" y="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XuFvQbQuQudh8McrRcfC-25">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-24" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="43" width="215" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XuFvQbQuQudh8McrRcfC-26">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-24" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="43" width="215" x="20" y="84" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="if triangles" status="Completed" id="XuFvQbQuQudh8McrRcfC-31">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;sketch=1;strokeColor=none;fillStyle=solid;fillColor=#A9C4EB;fontSize=16;swimlaneFillColor=#FFF2CC;" vertex="1">
+            <mxGeometry height="140" width="330" x="110" y="498" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="area or premiter" placeholders="1" id="XuFvQbQuQudh8McrRcfC-32">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-31" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=1;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="40" width="290" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ask for either sides or base and hight" placeholders="1" id="XuFvQbQuQudh8McrRcfC-33">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-31" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=1;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="39" width="290" x="20" y="81" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Pending" status="In progress" id="XuFvQbQuQudh8McrRcfC-37">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;strokeColor=none;fillStyle=solid;fillColor=none;fontSize=16;swimlaneFillColor=#CCFFFF;" vertex="1">
+            <mxGeometry height="212" width="300" x="470" y="61" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XuFvQbQuQudh8McrRcfC-38">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-37" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XuFvQbQuQudh8McrRcfC-39">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-37" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="40" width="260" x="20" y="88" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-1">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-37" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="40" width="260" x="20" y="148" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" status="In progress" id="XuFvQbQuQudh8McrRcfC-41">
+          <mxCell parent="1" style="swimlane;strokeWidth=2;fontFamily=Helvetica;html=0;startSize=1;verticalAlign=bottom;spacingBottom=5;points=[];childLayout=stackLayout;stackBorder=20;stackSpacing=20;resizeLast=0;resizeParent=1;horizontalStack=0;collapsible=0;strokeColor=none;fillStyle=solid;fillColor=none;fontSize=16;swimlaneFillColor=#E6D0DE;" vertex="1">
+            <mxGeometry height="370" width="300" x="470" y="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XuFvQbQuQudh8McrRcfC-42">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-41" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="21" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-2">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-41" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="88" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-3">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-41" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="155" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-4">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-41" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="222" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pending" placeholders="1" id="XGsU8kIDWy6GVZPeGPpP-5">
+          <mxCell parent="XuFvQbQuQudh8McrRcfC-41" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontStyle=0;spacingTop=0;rounded=1;arcSize=9;points=[];fontFamily=Helvetica;hachureGap=8;fillWeight=1;fontSize=13;strokeColor=#666666;align=left;verticalAlign=middle;spacing=5;fontColor=#333333;" vertex="1">
+            <mxGeometry height="47" width="260" x="20" y="289" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

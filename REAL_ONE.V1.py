@@ -1,4 +1,6 @@
 import math
+import pandas
+from tabulate import tabulate
 
 def not_blank(question):
     """Checks user response is not blank"""
@@ -135,6 +137,7 @@ def square():
     area = side ** 2
     perimeter = side * 4
 
+
     print()
     print(f"Square area: {area:.2f}")
     print(f"Square perimeter: {perimeter:.2f}")
@@ -157,7 +160,7 @@ def startshape():
         print()
         rectangle()
     elif shape == "xxx":
-        print("how do pandas?")
+        return
     else:
         print()
         print("Please enter one of the below")
@@ -167,6 +170,19 @@ def startshape():
         print(" 'circle'    (c)")
         print()
         startshape()
+
+
+all_shapes = []
+all_areas = []
+all_perimeters = []
+
+namestuffnumber = {
+    'shape': all_shapes,
+    'area': all_areas,
+    'perimeter': all_perimeters
+}
+
+
 
 # main
 print(make_statement("---|Souza's Shape Calc|---"))
@@ -185,7 +201,7 @@ if want_instructions == "no":
 
 startshape()
 
-
-
+panda = tabulate(pandas.DataFrame(namestuffnumber), headers='keys', tablefmt='psql', showindex=False)
+print(panda)
 
 
