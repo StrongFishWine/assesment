@@ -2,6 +2,10 @@ import math
 import pandas
 from tabulate import tabulate
 
+all_shapes = []
+all_areas = []
+all_perimeters = []
+
 def not_blank(question):
     """Checks user response is not blank"""
     while True:
@@ -55,10 +59,28 @@ def yes_no_check(question):
 
 def instructions():
     """make instructions: instructions"""
-    print(make_statement("Instructions:"))
-    print('''This a shape calculator
+    print(make_statement("-- -- -- --|Souza's Shape Calc|-- -- -- --"))
 
-    ''')
+    print()
+    want_instructions = yes_no_check("Would you like to see the instructions?: ")
+    print()
+
+    if want_instructions == "yes":
+        print("here ya go :D")
+        print(make_statement("Instructions:"))
+        print('''This a shape calculator
+This program will ask you for...
+- The name of the shape you want to calculate (Square, Rectangle, Triangle, or Circle)
+- The specific measurements of that shape (such as sides, radius, or base and height)
+The program outputs the exact area and perimeter/circumference of the shape you entered.
+Finally, it will keep track of every shape you calculate. When you type 'xxx' to exit, it 
+will print a beautifully formatted history table showing all your previous results. ;)''')
+
+    elif want_instructions == "no":
+        print(f"mb boss")
+
+    print("")
+    startshape()
 
 def triangle():
     area_how = not_blank("Do you know all the sides of the triangle or only the base/height: ")
@@ -66,7 +88,7 @@ def triangle():
     if area_how == "sides" or area_how == "s":
         print()
         tri_sides()
-    if area_how == "base" or area_how == "b/h" or area_how == "height" or area_how == "b" or area_how == "h"or area_how == "base/height":
+    elif area_how == "base" or area_how == "b/h" or area_how == "height" or area_how == "b" or area_how == "h"or area_how == "base/height":
         print()
         tri_BaseHeight()
     else:
@@ -84,6 +106,10 @@ def tri_BaseHeight():
     print()
     print(f"Triangle area: {area:.2f}")
     print()
+    all_shapes.append("Triangle")
+    all_areas.append(area)
+    all_perimeters.append("N/A")
+
     startshape()
 
 def tri_sides():
@@ -91,7 +117,7 @@ def tri_sides():
     side2 = num_check("Side two length: ")
     side3 = num_check("Side three length: ")
 
-    if (side1+side2<side3) or (side1+side3<side2) or (side3+side2<side1):
+    if (side1+side2<=side3) or (side1+side3<=side2) or (side3+side2<=side1):
         print("This triangle can't exist")
         print("Please try a real one")
         tri_sides()
@@ -104,6 +130,10 @@ def tri_sides():
     print(f"Triangle perimeter: {perimeter}")
     print(f"Triangle area: {area:.2f}")
     print()
+    all_shapes.append("Triangle")
+    all_areas.append(area)
+    all_perimeters.append(perimeter)
+
     startshape()
 
 def circle():
@@ -116,6 +146,11 @@ def circle():
     print(f"Circle area: {area:.2f}")
     print(f"Circle circumference: {perimeter:.2f}")
     print()
+
+    all_shapes.append("Circle")
+    all_areas.append(area)
+    all_perimeters.append(perimeter)
+
     startshape()
 
 def rectangle():
@@ -129,6 +164,11 @@ def rectangle():
     print(f"Rectangle area: {area:.2f}")
     print(f"Rectangle perimeter: {perimeter:.2f}")
     print()
+
+    all_shapes.append("Rectangle")
+    all_areas.append(area)
+    all_perimeters.append(perimeter)
+
     startshape()
 
 def square():
@@ -142,6 +182,11 @@ def square():
     print(f"Square area: {area:.2f}")
     print(f"Square perimeter: {perimeter:.2f}")
     print()
+
+    all_shapes.append("Square")
+    all_areas.append(area)
+    all_perimeters.append(perimeter)
+
     startshape()
 
 def startshape():
@@ -160,7 +205,8 @@ def startshape():
         print()
         rectangle()
     elif shape == "xxx":
-        return
+        print("Exiting calculator and showing history...")
+        results()
     else:
         print()
         print("Please enter one of the below")
@@ -171,37 +217,19 @@ def startshape():
         print()
         startshape()
 
+def results():
+    namestuffnumber = {
+        'Shape': all_shapes,
+        'Area': all_areas,
+        'Perimeter': all_perimeters
+    }
+    if len(all_shapes) > 0:
 
-all_shapes = []
-all_areas = []
-all_perimeters = []
+        panda = tabulate(pandas.DataFrame(namestuffnumber), headers='keys', tablefmt='psql', showindex=False)
+        print(panda)
 
-namestuffnumber = {
-    'shape': all_shapes,
-    'area': all_areas,
-    'perimeter': all_perimeters
-}
-
-
+    else:
+        print("No data entered, kid. U stink")
 
 # main
-print(make_statement("---|Souza's Shape Calc|---"))
-
-print()
-want_instructions = yes_no_check("Would you like to see the instructions?: ")
-print()
-
-if want_instructions == "yes":
-    print("here ya go :D")
-    instructions()
-
-
-if want_instructions == "no":
-    print(f"mb boss")
-
-startshape()
-
-panda = tabulate(pandas.DataFrame(namestuffnumber), headers='keys', tablefmt='psql', showindex=False)
-print(panda)
-
-
+instructions()
