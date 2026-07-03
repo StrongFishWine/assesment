@@ -17,6 +17,7 @@ def not_blank(question):
             print("Sorry, this can't be blank.")
 
 def num_check(question, num_type="float"):
+    """Checks if user response is a number over 0"""
 
     if num_type == "float":
         error = "Please enter a number."
@@ -55,7 +56,7 @@ def yes_no_check(question):
         print(f"Please answer yes / no (y / n)")
 
 def instructions():
-    """make instructions: instructions"""
+    """starts program asks for instructions then goes to shape start"""
     print("-- -- -- --|Souza's Shape Calc|-- -- -- --")
 
     print()
@@ -69,8 +70,8 @@ def instructions():
 This program will ask you for...
 - The name of the shape you want to calculate (Square, Rectangle, Triangle, or Circle)
 - The specific measurements of that shape (such as sides, radius, or base and height)
-The program outputs the exact area and perimeter/circumference of the shape you entered.
-Finally, it will keep track of every shape you calculate. When you type 'xxx' to exit, it 
+The program outputs the exact area and perimeter/circumference of the shape you entered up to two decimal places.
+Finally, it will keep track of every shape you calculate. When you type 'xxx' to exit during the what shape question, it 
 will print a beautifully formatted history table showing all your previous results. ;)''')
 
     elif want_instructions == "no":
@@ -80,6 +81,7 @@ will print a beautifully formatted history table showing all your previous resul
     startshape()
 
 def triangle():
+    """Checks what kind of triangle info you have then sends to whichever calculation to help user"""
     area_how = not_blank("Do you know all the sides of the triangle or only the base/height: ")
 
     if area_how == "sides" or area_how == "s":
@@ -95,6 +97,7 @@ def triangle():
         triangle()
 
 def tri_BaseHeight():
+    """asks for base and height calculates area shows it and saves for panda sends to shapestart"""
     base = num_check("Base length: ")
     height = num_check("Triangle Height: ")
 
@@ -110,6 +113,8 @@ def tri_BaseHeight():
     startshape()
 
 def tri_sides():
+    """asks for side lengths if triangle not real (Triangle Inequality Theorem) then asks for sides again then
+    calculates area and perimeter using herons law prints and appends sends to shapestart"""
     side1 = num_check("Side one length: ")
     side2 = num_check("Side two length: ")
     side3 = num_check("Side three length: ")
@@ -134,6 +139,7 @@ def tri_sides():
     startshape()
 
 def circle():
+    """Asks for radius calculates area and perimeter and appends sends back to shapestart"""
     radius = num_check("Radius length: ")
 
     area = math.pi * radius ** 2
@@ -151,6 +157,7 @@ def circle():
     startshape()
 
 def rectangle():
+    """Asks for width and length of rectangle and calculates area and perimeter prints appends and sends back to shapestart"""
     width = num_check("Horizontal line: ")
     length = num_check("Vertical line: ")
 
@@ -169,6 +176,7 @@ def rectangle():
     startshape()
 
 def square():
+    """Asks for side length then calculates area and perimeter and appends sends back to shapestart"""
     side = num_check("side length: ")
 
     area = side ** 2
@@ -187,6 +195,7 @@ def square():
     startshape()
 
 def startshape():
+    """asks what shape user needs calculations for and sends to whichever they need if xxx exit code then sends to pandas/results"""
 
     shape = not_blank("What shape?: ")
     if shape == "circle" or shape == "c" or shape == "round one":
@@ -211,10 +220,12 @@ def startshape():
         print(" 'rectangle' (r)")
         print(" 'triangle'  (t)")
         print(" 'circle'    (c)")
+        print("  exit  =>  (xxx)")
         print()
         startshape()
 
 def results():
+    """checks to see if user has correct data then prints results ends code"""
     namestuffnumber = {
         'Shape': all_shapes,
         'Area': all_areas,
@@ -228,5 +239,5 @@ def results():
     else:
         print("No data entered, kid. U stink")
 
-# main
+# main/do instructions
 instructions()
